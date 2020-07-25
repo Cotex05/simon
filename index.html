@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="icon" href="game.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  
+</head>
+
+<body>
+
+    <Button type="button" class="howtoplay" id="howtoplay">How to play</Button>
+    <br>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div>
+      <h3>1️. Press the Play button. Simon will give the first signal. Repeat the signal by pressing the same color lens.</h3>
+
+      <h3>2. Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color lenses, in order.</h3>
+      
+      <h3>3️. Simon will duplicate these first two signals and add one.</h3>
+      
+     <h3>4️. Continue playing as long as you can repeat each sequence of signals correctly.</h3>
+      
+      <h3>5️. If you fail to repeat a sequence exactly, Simon responds with a <b>"Gameover"</b> sound. This means you've lost, and the sequence of signals ends.</h3>
+    </div>
+  </div>
+
+</div>
+
+  <h1 id="level-title">Play Simon Game 🎮</h1>
+
+  <div>
+    <Button type="button" id="playbtn" >Play</Button>
+    <Button type="button" class="playagainbtndisplay" id="playagainbtn" onclick="refreshPage()">Play Again</Button>
+  </div>
+
+  <section class="section" id="section">
+  <div class="container">
+    <div class="row">
+
+      
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <h2>💻Developed by Cotex </h2>
+</footer>
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="game.js"></script>
+</body>
+
+</html>
